@@ -23,19 +23,32 @@
     <p id="percent"></p>
     <hr>
   </div>
-  <div id="projects" class="project-grid">
-    <a href="https://lego.fredrikburmester.com"><img id="asset1" src="./images/asset1.gif" alt="Profile picture"></a>
-    <div id="asset-text1" class"grid-item">
-      <p>Lego database website<br>Back-end: SQL Database<br>Front-end: CSS Grids</p>
+  <div id="projects" class="projects">
+    <div class="grid-item">
+      <div class="project-image-container">
+        <a href="https://github.com/fredrikburmester/TNMK30"><img class="project-image" src="./images/asset1.gif" alt="Project 1"></a>
+      </div>
+      <div class="grid-item-text">
+        <p>Lego database website<br>Back-end: SQL Database<br>Front-end: CSS Grids</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="project-image-container">
+        <a href="https://github.com/fredrikburmester/fredrikburmester-express"><img class="project-image" src="./images/asset-2.gif" alt="Project 2"></a>
+      </div>
+      <div class="grid-item-text">
+        <p>My own photography website. Full-stack website built with Express in the back, and Pug and vanilla JS at the front.</p>
+      </div>
     </div>
   </div>
   <div class="footer" id="contact">
+    <p>See all projects: <a href="https://github.com/fredrikburmester">Github</a></p>
     <p>Contact: <a href="mailto:fredrik.burmester@gmail.com" target="_top">fredrik.burmester@gmail.com</a></p>
   </div>
 </body>
 
 <script>
-  Date.daysBetween = function(date1, date2) {
+  Date.daysBetween = function (date1, date2) {
     //Get 1 day in milliseconds
     var one_day = 1000 * 60 * 60 * 24;
 
