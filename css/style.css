@@ -170,7 +170,7 @@ p, h1, h2, h3, a {
 }
 
 hr {
-  width: calc(72% - 10em);
+  width: calc(88% - 10em);
   margin-left: 5em;
   -webkit-animation: hr 5s ease normal;
   -moz-animation: hr 5s ease normal;
