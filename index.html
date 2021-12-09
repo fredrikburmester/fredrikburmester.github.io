@@ -14,6 +14,7 @@
     <a href="#projects">Portfolio</a>
     <a href="#contact" onclick="contact()">Contact</a>
   </div>
+  <div id="navbar"></div>
   <div id="main">
     <img id="pp1" src="./images/profilepicture-3.jpeg" alt="Profile picture">
   </div>
@@ -26,18 +27,26 @@
   <div id="projects" class="projects">
     <div class="grid-item">
       <div class="project-image-container">
-        <a href="https://github.com/fredrikburmester/TNMK30"><img class="project-image" src="./images/asset1.gif" alt="Project 1"></a>
-      </div>
-      <div class="grid-item-text">
-        <p>Lego database website<br>Back-end: SQL Database<br>Front-end: CSS Grids</p>
-      </div>
-    </div>
-    <div class="grid-item">
-      <div class="project-image-container">
         <a href="https://github.com/fredrikburmester/fredrikburmester-express"><img class="project-image" src="./images/asset-2.gif" alt="Project 2"></a>
       </div>
       <div class="grid-item-text">
         <p>My own photography website. Full-stack website built with Express in the back, and Pug and vanilla JS at the front.</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="project-image-container">
+        <a href="https://github.com/fredrikburmester/Soundcheck"><img class="project-image" src="./images/soundcheck.gif" alt="Project 2"></a>
+      </div>
+      <div class="grid-item-text">
+        <p>An online web-based game where you and your friends can guess each others top Spotify songs!</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="project-image-container">
+        <a href="https://github.com/fredrikburmester/TNMK30"><img class="project-image" src="./images/asset1.gif" alt="Project 1"></a>
+      </div>
+      <div class="grid-item-text">
+        <p>Lego database website<br>Back-end: SQL Database<br>Front-end: CSS Grids</p>
       </div>
     </div>
   </div>
@@ -72,6 +81,22 @@
   percent = percent.toFixed(2);
   var paragraph = document.getElementById("percent");
   paragraph.textContent = percent + '% M.Sc. in Media Technology';
+
+  let scrollpos = window.scrollY
+  const header = document.getElementById("navbar")
+  const header_height = 300
+
+  const add_class_on_scroll = () => header.classList.add("white-bg")
+  const remove_class_on_scroll = () => header.classList.remove("white-bg")
+
+  window.addEventListener('scroll', function() { 
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
 </script>
 
 </html>

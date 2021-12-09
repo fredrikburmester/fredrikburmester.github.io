@@ -63,6 +63,24 @@ p, h1, h2, h3, a {
   position: fixed;
   top: 0;
   width: 100%;
+  transition: opacity 1s;
+  z-index: 2;
+}
+
+#navbar {
+  width: 100%;
+  position:fixed;
+  opacity: 0;
+  background-color: black;
+  z-index: 0;
+}
+
+.white-bg {
+  background-color: rgba(0, 0, 0, 0.774);
+  opacity: 0;
+  /* fade in animation */
+  padding-bottom: 20px;
+  transition: opacity 1s;
 }
 
 .navbar>a {
