@@ -200,7 +200,7 @@ hr {
     width: 0%;
   }
   100% {
-    width: calc(72% - 10em);
+    width: calc(94% - 10em);
   }
 }
 
