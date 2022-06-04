@@ -103,6 +103,13 @@ p, h1, h2, h3, a {
   top: 25px;
 }
 
+.grid-item-text > p{
+  text-align: left;
+}
+.grid-item-text > h1 {
+  text-align: left;
+}
+
 #main>p {
   user-drag: none;
   user-select: none;
@@ -110,11 +117,6 @@ p, h1, h2, h3, a {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-}
-
-#main {
-  padding-bottom: 2em;
-  padding-top: 0;
 }
 
 #pp1 {
@@ -141,18 +143,29 @@ p, h1, h2, h3, a {
 
 .projects {
   margin: 5em 5em 5em 5em;
+  max-width: 1000px;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grid-item {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 50% 50%;
   align-items: center;
-  justify-items: center;
+  /* justify-items: center; */
   margin-top: 5em;
 }
 
 .project-image-container {
-  width: 50%;
+  width: 90%;
+}
+
+#about {
+  max-width: 65vw; 
+  margin-left: auto; 
+  margin-right: auto; 
+  line-height: 30px;
 }
 
 .project-image {
@@ -199,6 +212,11 @@ hr {
   animation: hr 5s ease normal;
 }
 
+#main {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 @-webkit-keyframes hr {
   0% {
     width: 0%;
@@ -220,7 +238,8 @@ hr {
   }
 
   .projects {
-    margin: 5em 1em 5em 1em;
+    
+    margin: 5em 5vw 5em 5vw;
   }
 
   .sticky {
@@ -232,12 +251,18 @@ hr {
     width: 50%;
   }
 
-  #main {
-    padding: 0;
-  }
-
   h1 {
     padding-bottom: 1em;
+  }
+  #about {
+    max-width: 90vw; 
+    margin-left: auto; 
+    margin-right: auto; 
+    line-height: 30px;
+  }
+  .grid-item-text > h1 {
+    text-align: left;
+    padding-bottom: 0;
   }
 }
 

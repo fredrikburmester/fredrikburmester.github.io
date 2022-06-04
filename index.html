@@ -15,9 +15,9 @@
   <div id="main">
     <img id="pp1" src="./images/profilepicture-3.jpeg" alt="Profile picture">
   <h1>Fredrik Burmester</h1>
-  <p style="max-width: 65vw; margin-left: auto; margin-right: auto; line-height: 30px;">
+  <p id="about">
     Hi and welcome to my simple portfolio website! I'm a student at Linköping Univeristy, studying a masters of science in Media Technology and Engineering and I'm currently working as a web developer at <a href="https://www.sigbit.se/">Sigbit</a>. I have a passion for programming, everything from creating APIs or small programs in Python to full-stack websites with advance database structures and web hosting from my own server. 
-    On my free time (when I'm not programming 🧑🏻‍💻) I like to play the guitar, sail, take photos, play chess and video games, watch movies listen to music. I also like to learn about new technologies and how they can improve my skills.
+    
     <br><br>
     Check out some of my projects below or my Github page to see what I'm working on. And don't be shy, shoot me an email if you have any questions or want to work together! Links at the bottom of the page. 😄 
     <br>
@@ -25,16 +25,27 @@
     If you want you can download my CV <a href="./files/CV - Fredrik Burmester.pdf" download>here</a>
   
   </p>
-  <div id="progress">
-    <p id="percent"></p>
-    <hr>
-  </div>
   <div id="projects" class="projects">
+    <div class="grid-item">
+      <div class="project-image-container">
+        <a href="https://github.com/fredrikburmester/fredrik.studio"><img class="project-image" src="./images/fredrik.studio.gif" alt="Photo portfolio with cloudflare"></a>
+      </div>
+      <div class="grid-item-text">
+        <h1>Portfolio website (with Cloudflare)</h1>
+        <p>
+          A remake of my portfolio website using Nuxt and Cloudflare Images as a backend for all photos. Plus, it has dark mode.  
+          <br>
+          <br>
+          Check it out <a href="https://dev.fredrik.studio/">here</a>.
+        </p>
+      </div>
+    </div>
     <div class="grid-item">
       <div class="project-image-container">
         <a href="https://github.com/fredrikburmester/fredrikburmester-express"><img class="project-image" src="./images/asset-2.gif" alt="Photo portfolio"></a>
       </div>
       <div class="grid-item-text">
+        <h1>Portfolio website</h1>
         <p>
           My own photography website. Built with Express in the back-end with Pug and vanilla JS in the front-end. Full-fledged lazy loading system and mobile touch support in the gallery. 
           <br>
@@ -45,9 +56,25 @@
     </div>
     <div class="grid-item">
       <div class="project-image-container">
+        <a href="https://github.com/fredrikburmester/Soundcheck-V2"><img class="project-image" src="./images/soundcheck-v2.gif" alt="Soundcheck-V2"></a>
+      </div>
+      <div class="grid-item-text">
+        <h1>Soundcheck V2</h1>
+        <p>
+          Go check out your top songs and artists on Spotify! This is a remake of my old Soundcheck website. Built with a better design, more features, and a better user experience. 
+          <br>
+          <br>
+          It's online right now and you can go play it <a href="https://dev.soundcheckgame.com/">here</a>.
+        </p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="project-image-container">
         <a href="https://github.com/fredrikburmester/Soundcheck"><img class="project-image" src="./images/soundcheck.gif" alt="Soundcheck"></a>
       </div>
       <div class="grid-item-text">
+        <h1>Soundcheck</h1>
+
         <p>
           An online web-based game where you and your friends can guess each others top Spotify songs! Build with spotify authentication, websockets for all game-logic and the chat feature with simple database used to store all games.
           <br>
@@ -61,7 +88,19 @@
         <a href="https://github.com/fredrikburmester/klubbsegling-vue"><img class="project-image" src="./images/klubbsegling.gif" alt="Klubbsegling"></a>
       </div>
       <div class="grid-item-text">
+        <h1>Klubbsegling</h1>
+
         <p>Klubbsegling is a work in progress sailing website. Made for clubs and sailors to track and view turnaments, add boats and report statistics. The front-end is a Vue SPA and the backend uses Strapi as the CMS.</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="project-image-container">
+        <a href="https://github.com/fredrikburmester/photos-to-json"><img class="project-image" src="./images/photos-to-json.jpg" alt="photos-to-json"></a>
+      </div>
+      <div class="grid-item-text">
+        <h1>Photos to JSON</h1>
+        
+        <p>Photos to JSON is a python script to convert a photo directory into a neat JSON-file. Perfect for when you want to host photos on a website and need a compiled list of the images.</p>
       </div>
     </div>
     <div class="grid-item">
@@ -69,6 +108,8 @@
         <a href="https://github.com/fredrikburmester/TNMK30"><img class="project-image" src="./images/asset1.gif" alt="TNMK30"></a>
       </div>
       <div class="grid-item-text">
+        <h1>Lego</h1>
+
         <p>Lego database website<br>Back-end: PHP and SQL Database<br>Front-end: Vanilla JS, HTML and CSS Grids</p>
       </div>
     </div>
